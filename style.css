@@ -7,9 +7,6 @@
    Self-contained; system serif now, drop-in vintage faces later. Inline SVG.
    ══════════════════════════════════════════════════════════════════════════ */
 
-@font-face{font-family:'Fraunces';src:url('assets/fonts/Fraunces.woff2') format('woff2');font-weight:300 900;font-display:swap}
-@font-face{font-family:'Fraunces';src:url('assets/fonts/Fraunces-Italic.woff2') format('woff2');font-weight:300 900;font-style:italic;font-display:swap}
-
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0}
@@ -75,8 +72,10 @@ a{color:var(--ox);text-underline-offset:3px;text-decoration-thickness:1px}
 
 /* letterpressed label — small caps, gold, tracked */
 .label{font-family:var(--font-l);font-weight:600;font-size:.72rem;letter-spacing:.28em;
-  text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.6rem}
-.label .star{color:var(--gold);font-size:.8em}
+  text-transform:uppercase;color:#6F4B12;display:inline-flex;align-items:center;gap:.6rem}
+.label .star{color:#6F4B12;font-size:.8em}
+:root[data-theme="dark"] .label,:root[data-theme="dark"] .label .star{color:var(--gold-lit)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .label,:root:not([data-theme="light"]) .label .star{color:var(--gold-lit)}}
 
 /* ornamental rule: —— ✦ —— */
 .orn{display:flex;align-items:center;gap:1rem;color:var(--gold);margin:0}
@@ -224,7 +223,9 @@ a{color:var(--ox);text-underline-offset:3px;text-decoration-thickness:1px}
 @media (max-width:52rem){.foot-in{grid-template-columns:1fr;gap:1.5rem}}
 .foot .bn{font-family:var(--font-d);font-size:1.4rem}
 .foot p{color:var(--ink-soft);margin-top:.7rem;max-width:38ch;font-size:.95rem}
-.foot h4{font-family:var(--font-l);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.foot h3{font-family:var(--font-l);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#6F4B12;margin-bottom:.7rem}
+:root[data-theme="dark"] .foot h3{color:var(--gold-lit)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .foot h3{color:var(--gold-lit)}}
 .foot a{display:block;color:var(--ink);text-decoration:none;padding:.2rem 0;font-size:.97rem}
 .foot a:hover{color:var(--ox)}
 :root[data-theme="dark"] .foot a:hover,@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .foot a:hover{color:var(--gold-lit)}}

@@ -1,8 +1,8 @@
 /* ══════════════════════════════════════════════════════════════════════════
    SCONE SOURCERY — scone.js · "Old-World Bakehouse"
    Box builder (per-flavor qty → tally with true box math), theme toggle,
-   mobile menu, reveal. Progressive enhancement: the four + prices + the reserve
-   form all work with JS off; this only adds the running tally + niceties.
+   mobile menu, reveal. Progressive enhancement: the five + proposed prices +
+   pre-launch form work with JS off; this only adds the running tally + niceties.
    Box math: $4 ea · 6→$22 · 12→$40. Self-contained, reduced-motion aware.
    ══════════════════════════════════════════════════════════════════════════ */
 (function () {
@@ -75,7 +75,7 @@
       var price = priceFor(count), saved = count * SINGLE - price;
 
       if (!count) {
-        if (noteEl) noteEl.textContent = 'Mix them however you like.';
+        if (noteEl) noteEl.textContent = 'Build a hoped-for box.';
         if (ctaEl) ctaEl.style.display = 'none';
       } else {
         if (noteEl) noteEl.textContent = count + (count === 1 ? ' scone · $' : ' scones · $') + price + (saved > 0 ? ' · save $' + saved : '');
@@ -232,13 +232,7 @@
       playing ? stop() : start(); setBtn();
       try { localStorage.setItem('ss-music', playing ? 'on' : 'off'); } catch (e) {}
     });
-    // start automatically on the visitor's first interaction (autoplay is blocked until then)
-    var pref; try { pref = localStorage.getItem('ss-music'); } catch (e) {}
-    if (pref !== 'off') {
-      var gestures = ['pointerdown','keydown','wheel','touchstart'];
-      var go = function () { if (!playing) { start(); setBtn(); } gestures.forEach(function (g) { d.removeEventListener(g, go); }); };
-      gestures.forEach(function (g) { d.addEventListener(g, go, { once: true, passive: true }); });
-    }
+    // Audio starts only after the visitor explicitly presses the sound button.
     d.addEventListener('visibilitychange', function () {
       if (d.hidden && playing) { stop(); btn.dataset.resume = '1'; btn.classList.remove('on'); }
       else if (!d.hidden && btn.dataset.resume === '1') { btn.dataset.resume = ''; start(); btn.setAttribute('aria-pressed','true'); btn.classList.add('on'); }
