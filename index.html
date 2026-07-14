@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!-- ══════════════════════════════════════════════════════════════════════════
+     SCONE SOURCERY — index.html · "Old-World Bakehouse"
+     A vintage bakery with a whisper of magic (Sourcery ~ sorcery). Parchment &
+     gold by day, candlelit by night. Engraved shop-seal, woodcut scones,
+     letterpress panels — scrappy first-person voice as the twist. Five scones,
+     $4, boxes, delivery, casual catering, same-day RUSH "for a little extra
+     cheddar." Pre-launch: reservations open, baking this fall.
+     Self-contained: style.css + scone.js. Inline SVG. Works without JS.
+     ══════════════════════════════════════════════════════════════════════════ -->
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.className='';try{var t=localStorage.getItem('ss-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scone Sourcery — your Source for Scones (South Jersey)</title>
+<meta name="description" content="Scone Sourcery — your Source for Scones. Five scones, one guy, a South Jersey home oven. Reserve a box, get it delivered, or ask for same-day rush. Reservations open now; baking starts this fall.">
+<meta name="theme-color" content="#F1E7CE">
+<link rel="canonical" href="https://sconesourcery.com/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232A1C10'/%3E%3Cpath d='M16 8 L25 24 H7 Z' fill='none' stroke='%23C89A3E' stroke-width='1.6'/%3E%3Cpath d='M16 4 l1 3 3 -1 -2 2.6 2 2.4 -3 -.6 -1 3 -1 -3 -3 .6 2 -2.4 -2 -2.6 3 1 z' fill='%23C89A3E'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Scone Sourcery">
+<meta property="og:title" content="Scone Sourcery — your Source for Scones">
+<meta property="og:description" content="Five scones, one guy, a South Jersey home oven. Reserve a box, delivery, or same-day rush for a little extra cheddar. Reservations open; baking this fall.">
+<meta property="og:url" content="https://sconesourcery.com/">
+<meta property="og:image" content="https://sconesourcery.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Bakery","name":"Scone Sourcery","slogan":"Your Source for Scones","url":"https://sconesourcery.com/","servesCuisine":"Scones","priceRange":"$","areaServed":"South Jersey","email":"hello@sconesourcery.com","telephone":"+1-321-788-2555","description":"A one-person scone bakery in South Jersey — five scones, boxes, local delivery, casual party catering, and same-day rush. NJ Cottage Food home kitchen. Pre-launch: reservations open now, baking begins fall 2026.","openingHoursSpecification":{"@type":"OpeningHoursSpecification","description":"Pre-launch — reservations open; baking begins fall 2026."}}
+</script>
+<link rel="stylesheet" href="style.css">
+<script src="scone.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#menu">Skip to the scones</a>
+
+<div class="banner" role="status">★ Reservations open · baking begins this fall · <a href="#reserve">claim a box →</a></div>
+
+<header class="bar" id="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="/" aria-label="Scone Sourcery home">
+      <span class="crest" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><defs><radialGradient id="coin" cx="38%" cy="32%" r="72%"><stop offset="0" stop-color="var(--gold-lit)"/><stop offset="1" stop-color="var(--gold)"/></radialGradient></defs>
+          <circle cx="22" cy="22" r="21" fill="url(#coin)"/>
+          <circle cx="22" cy="22" r="21" fill="none" stroke="var(--ink)" stroke-width="1" opacity=".28"/>
+          <circle cx="22" cy="22" r="17" fill="none" stroke="var(--ink)" stroke-width="1.1"/>
+          <g fill="var(--ink)"><circle cx="7.5" cy="22" r="1.2"/><circle cx="36.5" cy="22" r="1.2"/></g>
+          <path d="M22 9 l1.3 3.6 3.8 .2 -3 2.4 1 3.7 -3.1 -2.1 -3.1 2.1 1 -3.7 -3 -2.4 3.8 -.2 z" fill="var(--ink)"/>
+          <path d="M11 30 Q13.5 18.5 22 16 Q30.5 18.5 33 30 Q27.5 32.8 22 32.8 Q16.5 32.8 11 30 Z" fill="var(--ink)"/>
+          <g stroke="var(--gold-lit)" stroke-width=".6" opacity=".55" fill="none"><path d="M16 30 q0 -6 2.4 -11"/><path d="M22 31 q0 -7 2.4 -12"/><path d="M28 30 q-1.2 -5 -3.4 -8.5"/></g>
+        </svg>
+      </span>
+      <span class="bn">Scone <i>Sourcery</i></span>
+    </a>
+    <button class="iconbtn bar-toggle" type="button" aria-expanded="false" aria-controls="bar-nav" aria-label="Menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="bar-nav" id="bar-nav" aria-label="Primary">
+      <a class="bar-link" href="#menu">The Five</a>
+      <a class="bar-link" href="#services">Delivery &amp; Parties</a>
+      <a class="bar-link" href="#rush">Rush</a>
+      <button class="iconbtn sound-btn" id="sound-btn" type="button" aria-pressed="false" aria-label="Play a little bakehouse music" title="A little bakehouse tune">
+        <svg class="off" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg>
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      </button>
+      <button class="iconbtn theme-btn" type="button" data-theme-toggle aria-label="Toggle candlelight">
+        <svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>
+        <svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn gold" href="#reserve">Reserve a box</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ══ HERO — the seal + the tagline ═════════════════════════════════════ -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <p class="label"><span class="star">✦</span> Est. 2026 · South Jersey</p>
+        <h1>Scone Sourcery.</h1>
+        <p class="tag it">Your Source for Scones.</p>
+        <p class="sub">Five scones, one guy, a home oven, and a little too much care about butter. Reserve a box now — I start baking this fall.</p>
+        <div class="actions">
+          <a class="btn gold" href="#menu">See the five</a>
+          <a class="btn" href="#rush">Need them today?</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <!-- THE HEARTH — an interactive wood-fired oven; the fire follows your cursor -->
+        <svg class="hearth" id="hearth" viewBox="0 0 420 420" role="img" aria-label="A glowing wood-fired oven. Move your cursor to stir the fire.">
+          <defs>
+            <radialGradient id="hGlow" cx="50%" cy="72%" r="60%"><stop offset="0" stop-color="#FFD87A" stop-opacity=".95"/><stop offset="45%" stop-color="#F0913A" stop-opacity=".45"/><stop offset="100%" stop-color="#F0913A" stop-opacity="0"/></radialGradient>
+            <radialGradient id="hFire" cx="50%" cy="88%" r="78%"><stop offset="0" stop-color="#FFEA86"/><stop offset="45%" stop-color="#F5872A"/><stop offset="100%" stop-color="#BE2E18"/></radialGradient>
+            <linearGradient id="hStone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CDB187"/><stop offset="1" stop-color="#A5895E"/></linearGradient>
+          </defs>
+          <ellipse id="h-glow" cx="210" cy="300" rx="160" ry="130" fill="url(#hGlow)" opacity=".5"/>
+          <!-- stone arch surround -->
+          <path d="M66 352 V198 A144 144 0 0 1 354 198 V352 Z" fill="url(#hStone)" stroke="#876E46" stroke-width="2"/>
+          <g stroke="#876E46" stroke-width="1.4" opacity=".5" fill="none"><path d="M66 258 H150 M270 258 H354 M66 306 H120 M300 306 H354"/><path d="M104 210 q106 -74 212 0"/><path d="M150 258 V210 M270 258 V210 M120 306 V258 M300 306 V258 M210 200 V150"/></g>
+          <!-- oven interior -->
+          <path d="M108 352 V212 A102 102 0 0 1 312 212 V352 Z" fill="#1b0e05"/>
+          <ellipse id="h-firelight" cx="210" cy="330" rx="92" ry="52" fill="url(#hGlow)" opacity=".85"/>
+          <!-- logs -->
+          <g stroke="#5C3E22" stroke-width="8" stroke-linecap="round"><path d="M158 344 l42 -9"/><path d="M216 342 l46 7"/></g>
+          <g stroke="#8A5A2B" stroke-width="2" stroke-linecap="round" opacity=".6"><path d="M160 342 l40 -8"/></g>
+          <!-- flames (JS leans them toward the cursor) -->
+          <g id="h-flames">
+            <path d="M210 344 q-27 -15 -27 -48 q0 -21 15 -33 q-4 23 10 31 q0 -17 10 -27 q15 19 15 42 q0 35 -23 35 Z" fill="url(#hFire)"/>
+            <path d="M210 342 q-16 -10 -16 -34 q0 -14 9 -22 q0 14 8 18 q3 -10 5 -16 q10 14 10 28 q0 24 -16 26 Z" fill="#FFE486"/>
+            <path d="M180 344 q-11 -8 -11 -25 q0 -8 6 -14 q0 10 6 12 q2 -7 3 -11 q8 10 8 23 q0 15 -12 15Z" fill="url(#hFire)" opacity=".92"/>
+            <path d="M240 344 q11 -8 11 -25 q0 -8 -6 -14 q0 10 -6 12 q-2 -7 -3 -11 q-8 10 -8 23 q0 15 12 15Z" fill="url(#hFire)" opacity=".92"/>
+          </g>
+          <!-- peel of golden scones entering -->
+          <path d="M24 366 L150 320 l5 13 -126 46 Z" fill="#BE9152" stroke="#8A5A2B" stroke-width="1"/>
+          <g fill="#E4AE54" stroke="#8f5d26" stroke-width="1"><path d="M108 330 q5 -13 15 -14 q10 1 15 14 q-7 5 -15 5 q-8 0 -15 -5Z"/><path d="M78 340 q5 -13 15 -14 q10 1 15 14 q-7 5 -15 5 q-8 0 -15 -5Z"/></g>
+          <!-- steam -->
+          <g stroke="#EAD9BA" stroke-width="4" fill="none" opacity=".45" stroke-linecap="round"><path d="M176 300 q-9 -20 5 -38"/><path d="M236 296 q11 -22 -4 -40"/></g>
+          <!-- embers (JS spawns these) -->
+          <g id="h-embers"></g>
+          <path d="M36 354 H384" stroke="#876E46" stroke-width="3"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ THE MENU ══════════════════════════════════════════════════════════ -->
+  <section class="section" id="menu">
+    <div class="wrap">
+      <p class="label reveal"><span class="star">✦</span> The whole menu</p>
+      <h2 class="reveal" style="margin-top:.5rem">Five scones. That’s the spell.</h2>
+      <p class="measure soft reveal" style="margin-top:1rem">Five, because I caved. Four was the plan; honey &amp; chocolate chip had other ideas. Every one’s $4 — mix a box however you like. (The <i>sourcery</i> is real; the sorcery is just very good butter.)</p>
+
+      <div class="menu" id="flavors">
+        <article class="item reveal" data-id="brown-butter" data-name="Brown Butter &amp; Sea Salt" data-price="4">
+          <span class="item-cut" aria-hidden="true"><svg viewBox="0 0 72 72"><defs><radialGradient id="bbb" cx="42%" cy="26%" r="78%"><stop offset="0" stop-color="#F2D385"/><stop offset="55%" stop-color="#DDA64B"/><stop offset="100%" stop-color="#B2782F"/></radialGradient></defs><ellipse cx="36" cy="56" rx="26" ry="5.5" fill="#43290f" opacity=".2"/><path d="M12 46 Q12 22 36 20 Q60 22 60 46 Q60 53 36 56 Q12 53 12 46 Z" fill="url(#bbb)" stroke="#8f5d26" stroke-width="1"/><path d="M20 29 Q36 21 52 29 Q43 25 36 25 Q29 25 20 29Z" fill="#FaE8B4" opacity=".55"/><path d="M13 47 Q36 56 59 47 Q36 51 13 47Z" fill="#8f5d26" opacity=".4"/><path d="M28 29 h13 a3 3 0 0 1 3 3 v3 a3 3 0 0 1 -3 3 h-3 q-4 6 -10 3 a3 3 0 0 1 -1 -6 v-3 a3 3 0 0 1 1 -3z" fill="#F6D45A"/><ellipse cx="32" cy="32.5" rx="6" ry="2" fill="#FFF1BC"/><g fill="#ffffff"><circle cx="22" cy="39" r="1.1"/><circle cx="50" cy="38" r="1.1"/><circle cx="37" cy="43" r="1"/></g></svg></span>
+          <div class="item-main"><div class="item-top"><span class="no">I</span><h3>Brown Butter &amp; Sea Salt</h3></div><p class="desc">Nutty browned butter, a crack of flaky salt. Not too sweet. The one I’d hand you first.</p></div>
+          <div class="item-right"><span class="price">$4</span><span class="qty" data-stepper><button type="button" data-dec aria-label="One fewer">–</button><span class="n" data-qty>0</span><button type="button" data-inc aria-label="One more">+</button></span></div>
+        </article>
+        <article class="item reveal" data-id="wild-blueberry" data-name="Wild Blueberry &amp; Lemon" data-price="4">
+          <span class="item-cut" aria-hidden="true"><svg viewBox="0 0 72 72"><defs><radialGradient id="bwb" cx="42%" cy="26%" r="78%"><stop offset="0" stop-color="#F2D385"/><stop offset="55%" stop-color="#DDA64B"/><stop offset="100%" stop-color="#B2782F"/></radialGradient></defs><ellipse cx="36" cy="56" rx="26" ry="5.5" fill="#43290f" opacity=".2"/><path d="M12 46 Q12 22 36 20 Q60 22 60 46 Q60 53 36 56 Q12 53 12 46 Z" fill="url(#bwb)" stroke="#8f5d26" stroke-width="1"/><path d="M20 29 Q36 21 52 29 Q43 25 36 25 Q29 25 20 29Z" fill="#FaE8B4" opacity=".55"/><path d="M13 47 Q36 56 59 47 Q36 51 13 47Z" fill="#8f5d26" opacity=".4"/><g><circle cx="25" cy="37" r="3.6" fill="#4C4A94"/><circle cx="23.7" cy="35.6" r="1.2" fill="#9391Cb"/><circle cx="36" cy="41" r="3.1" fill="#413E85"/><circle cx="34.8" cy="39.7" r="1" fill="#9391Cb"/><circle cx="46" cy="36" r="3.3" fill="#4C4A94"/><circle cx="44.8" cy="34.6" r="1.1" fill="#9391Cb"/></g><path d="M29 45 q7 3 14 0" stroke="#5B3A86" stroke-width="1.5" fill="none" opacity=".55"/></svg></span>
+          <div class="item-main"><div class="item-top"><span class="no">II</span><h3>Wild Blueberry &amp; Lemon</h3></div><p class="desc">Wild blueberries that pop, a hit of lemon zest. Bright, jammy, gone fast.</p></div>
+          <div class="item-right"><span class="price">$4</span><span class="qty" data-stepper><button type="button" data-dec aria-label="One fewer">–</button><span class="n" data-qty>0</span><button type="button" data-inc aria-label="One more">+</button></span></div>
+        </article>
+        <article class="item reveal" data-id="cheddar-chive" data-name="Sharp Cheddar &amp; Chive" data-price="4">
+          <span class="item-cut" aria-hidden="true"><svg viewBox="0 0 72 72"><defs><radialGradient id="bcc" cx="42%" cy="26%" r="78%"><stop offset="0" stop-color="#F2D385"/><stop offset="55%" stop-color="#DDA64B"/><stop offset="100%" stop-color="#B2782F"/></radialGradient></defs><ellipse cx="36" cy="56" rx="26" ry="5.5" fill="#43290f" opacity=".2"/><path d="M12 46 Q12 22 36 20 Q60 22 60 46 Q60 53 36 56 Q12 53 12 46 Z" fill="url(#bcc)" stroke="#8f5d26" stroke-width="1"/><path d="M20 29 Q36 21 52 29 Q43 25 36 25 Q29 25 20 29Z" fill="#FaE8B4" opacity=".55"/><path d="M13 47 Q36 56 59 47 Q36 51 13 47Z" fill="#8f5d26" opacity=".4"/><g fill="#E88A2C"><circle cx="26" cy="34" r="2"/><circle cx="45" cy="36" r="1.8"/><circle cx="37" cy="41" r="1.7"/><circle cx="32" cy="30" r="1.5"/></g><g stroke="#5E8A3C" stroke-width="1.8" stroke-linecap="round"><path d="M29 39 l4.5 -3.4"/><path d="M40 33 l4.5 3.4"/></g></svg></span>
+          <div class="item-main"><div class="item-top"><span class="no">III</span><h3>Sharp Cheddar &amp; Chive</h3> <span class="tag-sv">savoury</span></div><p class="desc">Aged cheddar gone crisp at the edges, fresh chive. Breakfast, handled.</p></div>
+          <div class="item-right"><span class="price">$4</span><span class="qty" data-stepper><button type="button" data-dec aria-label="One fewer">–</button><span class="n" data-qty>0</span><button type="button" data-inc aria-label="One more">+</button></span></div>
+        </article>
+        <article class="item reveal" data-id="maple-pecan" data-name="Maple Pecan" data-price="4">
+          <span class="item-cut" aria-hidden="true"><svg viewBox="0 0 72 72"><defs><radialGradient id="bmp" cx="42%" cy="26%" r="78%"><stop offset="0" stop-color="#F2D385"/><stop offset="55%" stop-color="#DDA64B"/><stop offset="100%" stop-color="#B2782F"/></radialGradient></defs><ellipse cx="36" cy="56" rx="26" ry="5.5" fill="#43290f" opacity=".2"/><path d="M12 46 Q12 22 36 20 Q60 22 60 46 Q60 53 36 56 Q12 53 12 46 Z" fill="url(#bmp)" stroke="#8f5d26" stroke-width="1"/><path d="M20 29 Q36 21 52 29 Q43 25 36 25 Q29 25 20 29Z" fill="#FaE8B4" opacity=".55"/><path d="M13 47 Q36 56 59 47 Q36 51 13 47Z" fill="#8f5d26" opacity=".4"/><path d="M13 41 Q36 33 59 41" stroke="#E3A63C" stroke-width="2.4" fill="none" opacity=".6"/><g fill="#8A5A2B" stroke="#5C3A1C" stroke-width=".5"><ellipse cx="27" cy="38" rx="4.4" ry="2.8" transform="rotate(24 27 38)"/><ellipse cx="46" cy="40" rx="4.4" ry="2.8" transform="rotate(-20 46 40)"/></g><g stroke="#5C3A1C" stroke-width=".5" opacity=".7"><path d="M24.5 38 h5 M43.5 40 h5"/></g></svg></span>
+          <div class="item-main"><div class="item-top"><span class="no">IV</span><h3>Maple Pecan</h3></div><p class="desc">Toasted pecans, a real-maple glaze that sets to a thin crackle. Cozy, autumn, dangerous.</p></div>
+          <div class="item-right"><span class="price">$4</span><span class="qty" data-stepper><button type="button" data-dec aria-label="One fewer">–</button><span class="n" data-qty>0</span><button type="button" data-inc aria-label="One more">+</button></span></div>
+        </article>
+        <article class="item reveal" data-id="honey-choc" data-name="Honey &amp; Chocolate Chip" data-price="4">
+          <span class="item-cut" aria-hidden="true"><svg viewBox="0 0 72 72"><defs><radialGradient id="bhc" cx="42%" cy="26%" r="78%"><stop offset="0" stop-color="#F2D385"/><stop offset="55%" stop-color="#DDA64B"/><stop offset="100%" stop-color="#B2782F"/></radialGradient></defs><ellipse cx="36" cy="56" rx="26" ry="5.5" fill="#43290f" opacity=".2"/><path d="M12 46 Q12 22 36 20 Q60 22 60 46 Q60 53 36 56 Q12 53 12 46 Z" fill="url(#bhc)" stroke="#8f5d26" stroke-width="1"/><path d="M20 29 Q36 21 52 29 Q43 25 36 25 Q29 25 20 29Z" fill="#FaE8B4" opacity=".55"/><path d="M13 47 Q36 56 59 47 Q36 51 13 47Z" fill="#8f5d26" opacity=".4"/><g fill="#3E271A"><rect x="23" y="35" width="4.6" height="4.6" rx="1" transform="rotate(12 25 37)"/><rect x="41" y="34" width="4.6" height="4.6" rx="1" transform="rotate(-10 43 36)"/><rect x="33" y="42" width="4.6" height="4.6" rx="1"/></g><path d="M19 29 Q36 37 53 29" stroke="#E9A93A" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M19 29 Q36 37 53 29" stroke="#F8D888" stroke-width=".9" fill="none" opacity=".75"/></svg></span>
+          <div class="item-main"><div class="item-top"><span class="no">V</span><h3>Honey &amp; Chocolate Chip</h3></div><p class="desc">Wildflower honey and dark chocolate chips. The sweet one, the crowd-pleaser — the reason I caved on a fifth.</p></div>
+          <div class="item-right"><span class="price">$4</span><span class="qty" data-stepper><button type="button" data-dec aria-label="One fewer">–</button><span class="n" data-qty>0</span><button type="button" data-inc aria-label="One more">+</button></span></div>
+        </article>
+      </div>
+
+      <p class="tally reveal" id="tally">
+        <span>$4 each · half-dozen <b>$22</b> · dozen <b>$40</b>.</span>
+        <span class="save" id="tally-note">Mix them however you like.</span>
+        <a class="btn gold" id="tally-cta" href="#reserve" style="display:none">Reserve <span id="tally-sum"></span> →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ SERVICES — delivery & parties ═════════════════════════════════════ -->
+  <section class="section" id="services" style="padding-top:0">
+    <div class="wrap">
+      <p class="orn reveal"><span class="m">✦</span></p>
+      <div class="trio">
+        <div class="svc reveal">
+          <p class="label"><span class="star">✦</span> Pickup</p>
+          <h3>Come and get ’em.</h3>
+          <p>Reserve a box and grab it warm at the pickup window in South Jersey. Free, and the scones are at their absolute best.</p>
+        </div>
+        <div class="svc reveal">
+          <p class="label"><span class="star">✦</span> Delivery</p>
+          <h3>I drive them over.</h3>
+          <p>Around town I’ll bring the box to your door for a few honest bucks. They ride shotgun and show up <span class="em">warm</span>.</p>
+        </div>
+        <div class="svc reveal">
+          <p class="label"><span class="star">✦</span> Parties</p>
+          <h3>I’ll bake for your thing.</h3>
+          <p>Backyard, book club, cubicle birthday — tell me the headcount and I’ll bring a spread. Casual catering; I own one oven.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ THE RUSH — candlelit, "extra cheddar" ═════════════════════════════ -->
+  <section class="section rush" id="rush">
+    <div class="wrap">
+      <p class="label"><span class="star">✦</span> The emergency line</p>
+      <h2 style="margin-top:.5rem">Same-day scones.</h2>
+      <p class="measure">Empty snack table, game about to start, quiet panic setting in? I keep a small batch on hand — so a reasonably-sized order can get <strong>same-day rush delivery</strong>, to your door, for <span class="cheddar">a little extra cheddar</span>. Text me the word <strong>RUSH</strong> and panic later.</p>
+      <p class="fine">Big spreads still want a day’s notice. Same-day’s for a reasonable box, while the batch lasts.</p>
+      <a class="btn" href="sms:+13217882555;?&amp;body=RUSH">Text RUSH to (321)&nbsp;788-2555</a>
+    </div>
+  </section>
+
+  <!-- ══ HOW IT WORKS ══════════════════════════════════════════════════════ -->
+  <section class="section">
+    <div class="wrap">
+      <p class="label reveal"><span class="star">✦</span> How this goes</p>
+      <h2 class="reveal" style="margin-top:.5rem">Pick. Reserve. Nod.</h2>
+      <ol class="steps reveal">
+        <li><span class="s">i</span><span>Build a box off the five above.</span></li>
+        <li><span class="s">ii</span><span>Reserve it — no money down, pay when they’re warm.</span></li>
+        <li><span class="s">iii</span><span>I text you when they’re baked.</span></li>
+        <li><span class="s">iv</span><span>You grab it, or I drive it over. We nod. Everybody wins.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══ RESERVE ═══════════════════════════════════════════════════════════ -->
+  <section class="section" id="reserve" style="padding-top:0">
+    <div class="wrap" style="max-width:46rem">
+      <div class="frame reveal">
+        <svg class="corner tl" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 20 V8 Q2 2 8 2 H20"/><path d="M6 12 q3 -6 8 -6 M6 12 q-1 -5 4 -8" stroke-width="1"/></svg>
+        <svg class="corner tr" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 20 V8 Q2 2 8 2 H20"/><path d="M6 12 q3 -6 8 -6 M6 12 q-1 -5 4 -8" stroke-width="1"/></svg>
+        <svg class="corner bl" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 20 V8 Q2 2 8 2 H20"/><path d="M6 12 q3 -6 8 -6 M6 12 q-1 -5 4 -8" stroke-width="1"/></svg>
+        <svg class="corner br" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 20 V8 Q2 2 8 2 H20"/><path d="M6 12 q3 -6 8 -6 M6 12 q-1 -5 4 -8" stroke-width="1"/></svg>
+        <p class="label"><span class="star">✦</span> Claim a box</p>
+        <h2 style="margin-top:.5rem">Reserve yours.</h2>
+        <p class="soft" style="margin-top:.9rem;max-width:46ch">I start baking this fall (the permit’s in the oven). But dibs open right now — no money down, pay when they’re warm.</p>
+        <form id="reserve-form" method="POST" action="https://api.web3forms.com/submit" style="margin-top:1.8rem">
+          <input type="hidden" name="access_key" value="39f30a9b-381d-49e2-8f1a-6be6f4970d4e">
+          <input type="hidden" name="subject" value="New scone reservation — Scone Sourcery">
+          <input type="hidden" name="from_name" value="Scone Sourcery · reserve">
+          <input type="hidden" name="redirect" value="https://sconesourcery.com/thanks.html">
+          <input type="hidden" name="Your box" id="order-summary" value="(none picked yet)">
+          <input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="twos">
+            <div class="field"><label for="r-name">Your name</label><input class="input" id="r-name" name="Name" type="text" autocomplete="name" placeholder="First name’s fine" required></div>
+            <div class="field"><label for="r-reach">Phone or email</label><input class="input" id="r-reach" name="Reach me at" type="text" placeholder="(856) 555-0142" required></div>
+          </div>
+          <div class="field"><label for="r-kind">What do you need?</label>
+            <select class="input" id="r-kind" name="Occasion"><option>A box for pickup</option><option>A box, delivered</option><option>Scones for a party</option><option>RUSH — same-day if you can</option></select>
+          </div>
+          <div class="field"><label for="r-note">Your box &amp; anything else <span class="soft" style="text-transform:none;letter-spacing:0">— fills in from your picks; add allergies, a date, whatever</span></label><textarea class="input" id="r-note" name="Note" rows="3" placeholder="6 cheddar, 6 blueberry — need them Saturday. No nuts, please."></textarea></div>
+          <button class="btn gold" type="submit" style="width:100%;justify-content:center">Put me down for it →</button>
+          <p class="soft" style="text-align:center;margin-top:.8rem;font-size:.85rem;text-transform:none;letter-spacing:0">One guy reads every one of these. That guy is me. No card today, no spam.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ THE BAKEHOUSE — woodcut baker + heritage ═════════════════════════ -->
+  <section class="section" id="about">
+    <div class="folk reveal" aria-hidden="true">
+      <svg viewBox="0 0 320 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+        <path d="M160 8 q-7 8 0 16 q7 -8 0 -16Z" fill="currentColor" stroke="none"/>
+        <path d="M150 20 q-14 -8 -30 0 M170 20 q14 -8 30 0"/>
+        <path d="M120 20 q-8 -6 -10 -14 M120 20 q8 -4 12 -10 M110 20 q-8 -6 -10 -14 M110 20 q8 -4 12 -10"/>
+        <path d="M200 20 q8 -6 10 -14 M200 20 q-8 -4 -12 -10 M210 20 q8 -6 10 -14 M210 20 q-8 -4 -12 -10"/>
+        <path d="M96 20 h-26 M224 20 h26"/>
+        <circle cx="64" cy="20" r="2.4" fill="currentColor" stroke="none"/><circle cx="256" cy="20" r="2.4" fill="currentColor" stroke="none"/>
+      </svg>
+    </div>
+    <div class="wrap bakehouse">
+      <div class="scene reveal">
+        <svg viewBox="0 0 400 400" role="img" aria-label="A colourful bakehouse: a baker in a cream apron sliding a peel of golden scones into a glowing brick oven.">
+          <defs>
+            <radialGradient id="ovGlow" cx="70%" cy="60%" r="50%"><stop offset="0" stop-color="#FFCB5E" stop-opacity=".7"/><stop offset="55%" stop-color="#F0913A" stop-opacity=".18"/><stop offset="100%" stop-color="#F0913A" stop-opacity="0"/></radialGradient>
+            <radialGradient id="bhFire2" cx="50%" cy="80%" r="70%"><stop offset="0" stop-color="#FFDD5A"/><stop offset="55%" stop-color="#F0722A"/><stop offset="100%" stop-color="#BE2E18"/></radialGradient>
+            <radialGradient id="bhInt" cx="50%" cy="40%" r="75%"><stop offset="0" stop-color="#F7EAC6"/><stop offset="100%" stop-color="#E9D19C"/></radialGradient>
+            <clipPath id="bhClip2"><circle cx="200" cy="200" r="150"/></clipPath>
+          </defs>
+          <circle cx="200" cy="200" r="176" fill="none" stroke="var(--seal-ink)" stroke-width="1"/>
+          <circle cx="200" cy="200" r="168" fill="none" stroke="var(--seal-ink)" stroke-width="2.4"/>
+          <circle cx="200" cy="200" r="152" fill="none" stroke="var(--seal-ink)" stroke-width="1.2"/>
+          <g fill="var(--seal-ink)"><path d="M200 26 l1.7 4.6 4.9 .3 -3.8 3.1 1.3 4.7 -4.1 -2.7 -4.1 2.7 1.3 -4.7 -3.8 -3.1 4.9 -.3 z"/><path d="M200 374 l1.7 -4.6 4.9 -.3 -3.8 -3.1 1.3 -4.7 -4.1 2.7 -4.1 -2.7 1.3 4.7 -3.8 3.1 4.9 .3 z"/></g>
+          <g clip-path="url(#bhClip2)">
+            <circle cx="200" cy="200" r="150" fill="url(#bhInt)"/>
+            <rect x="40" y="300" width="320" height="60" fill="#C99A58"/>
+            <path d="M50 300 H350" stroke="#8A5A2B" stroke-width="2.4"/>
+            <g stroke="#A9743A" stroke-width="1" opacity=".45"><path d="M110 300 v50 M180 300 v50 M250 300 v50 M320 300 v50"/></g>
+            <rect x="60" y="60" width="280" height="260" fill="url(#ovGlow)"/>
+            <!-- brick oven -->
+            <path d="M232 300 V214 a56 56 0 0 1 112 0 V300 Z" fill="#B4623A"/>
+            <g stroke="#7E4526" stroke-width="1.6" opacity=".7" fill="none"><path d="M234 242 h108 M234 268 h108 M234 294 h108"/><path d="M262 214 v28 M300 214 v28 M262 268 v26 M300 268 v26 M282 242 v26 M320 242 v26"/><path d="M256 172 q32 -18 68 0"/></g>
+            <path d="M250 190 q38 -22 84 0" stroke="#D89463" stroke-width="3" fill="none" opacity=".55"/>
+            <path d="M300 168 h16 v-26 h-16 z" fill="#9A5230" stroke="#7E4526" stroke-width="1"/>
+            <path d="M308 142 q9 -14 -2 -26 q15 10 6 26" fill="none" stroke="#BEB19C" stroke-width="2.4" opacity=".6" stroke-linecap="round"/>
+            <path d="M258 300 V262 q0 -22 30 -22 q30 0 30 22 V300 Z" fill="#2a1408"/>
+            <g class="fire"><path d="M288 296 q-17 -8 -17 -27 q0 -13 9 -20 q-2 15 7 20 q0 -11 8 -17 q9 13 9 26 q0 23 -16 38 Z" fill="url(#bhFire2)"/><path d="M288 291 q-9 -5 -9 -18 q0 -9 6 -13 q0 9 5 11 q2 -7 4 -11 q7 9 7 20 q0 14 -13 24 Z" fill="#FFDF72"/></g>
+            <!-- baker -->
+            <path d="M120 198 q30 -16 60 0 l18 106 q-24 12 -48 12 q-24 0 -48 -12 Z" fill="#EFE3C6" stroke="#CDB889" stroke-width="1.5"/>
+            <path d="M152 192 l16 118 q-8 4 -16 4 Z" fill="#DBC79A" opacity=".55"/>
+            <path d="M168 200 q16 -4 30 8 l-8 16 q-14 -10 -26 -8 Z" fill="#EFE3C6" stroke="#CDB889" stroke-width="1"/>
+            <path d="M184 214 q34 8 68 42 l-10 12 q-34 -30 -66 -38 Z" fill="#E3AE80" stroke="#C98E5E" stroke-width="1"/>
+            <circle cx="150" cy="166" r="24" fill="#E7B486"/>
+            <path d="M128 162 q2 -26 22 -28 q20 2 22 28 q-6 -13 -22 -13 q-16 0 -22 13Z" fill="#6B4A2E"/>
+            <path d="M123 158 q6 -32 27 -32 q21 0 27 32 q-5 -7 -11 -4 q-4 -11 -16 -11 q-12 0 -16 11 q-6 -3 -11 4 Z" fill="#F8F0DE" stroke="#DBCFAE" stroke-width="1.2"/>
+            <circle cx="160" cy="168" r="2.2" fill="#4C2E18"/>
+            <path d="M154 178 q7 5 13 1" stroke="#A85E3C" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            <circle cx="166" cy="176" r="4" fill="#EE9A72" opacity=".5"/>
+            <!-- peel + scones -->
+            <path d="M190 236 L300 294 l-4 12 -110 -58 Z" fill="#BE9152" stroke="#8A5A2B" stroke-width="1"/>
+            <ellipse cx="300" cy="294" rx="20" ry="12" fill="#BE9152" stroke="#8A5A2B" stroke-width="1" transform="rotate(28 300 294)"/>
+            <path d="M276 278 q5 -13 14 -14 q9 1 14 14 q-6 5 -14 5 q-8 0 -14 -5Z" fill="#E4AE54" stroke="#8f5d26" stroke-width="1"/>
+            <!-- shelf scones -->
+            <path d="M60 296 h74" stroke="#8A5A2B" stroke-width="3.4" fill="none"/>
+            <g fill="#E4AE54" stroke="#8f5d26" stroke-width="1.4"><path d="M72 294 q6 -18 19 -19 q13 1 19 19 q-9 6 -19 6 q-10 0 -19 -6Z"/><path d="M104 294 q6 -18 19 -19 q13 1 19 19 q-9 6 -19 6 q-10 0 -19 -6Z"/></g>
+          </g>
+        </svg>
+      </div>
+      <div class="heritage reveal">
+        <p class="label"><span class="star">✦</span> The bakehouse</p>
+        <h2 style="margin-top:.5rem">One guy, one oven, old-country roots.</h2>
+        <p class="dropcap" style="margin-top:1.2rem">Scones are Scottish — so it’s a little on-brand that I’m mostly Nordic with a good pour of Scottish, Irish, and a splash of northern German in me. Close enough that butter and cold hands feel like an inheritance. It’s one pair of those hands, a home oven in South Jersey, and five scones I won’t stop fussing over.</p>
+        <p class="soft" style="margin-top:1rem">I fell for scones young — the smell filling the whole house, everybody drifting toward the oven like it was pulling them in. That pull is the only <i>sourcery</i> I deal in: the warm hush right before something good comes out. The star on the seal is for that. I’d like to hand a little of it to you.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="/"><span class="crest" aria-hidden="true"><svg viewBox="0 0 44 44"><defs><radialGradient id="coinF" cx="38%" cy="32%" r="72%"><stop offset="0" stop-color="var(--gold-lit)"/><stop offset="1" stop-color="var(--gold)"/></radialGradient></defs><circle cx="22" cy="22" r="21" fill="url(#coinF)"/><circle cx="22" cy="22" r="17" fill="none" stroke="var(--ink)" stroke-width="1.1"/><path d="M22 9 l1.3 3.6 3.8 .2 -3 2.4 1 3.7 -3.1 -2.1 -3.1 2.1 1 -3.7 -3 -2.4 3.8 -.2 z" fill="var(--ink)"/><path d="M11 30 Q13.5 18.5 22 16 Q30.5 18.5 33 30 Q27.5 32.8 22 32.8 Q16.5 32.8 11 30 Z" fill="var(--ink)"/></svg></span><span class="bn">Scone <i>Sourcery</i></span></a>
+      <p>Your Source for Scones. Home-baked in South Jersey — reserved by you, baked for you, brought to your door warm.</p>
+    </div>
+    <div>
+      <h4>The Goods</h4>
+      <a href="#menu">The five</a>
+      <a href="#services">Delivery &amp; parties</a>
+      <a href="#rush">Same-day rush</a>
+      <a href="#reserve">Reserve a box</a>
+    </div>
+    <div>
+      <h4>Say Hello</h4>
+      <a href="mailto:hello@sconesourcery.com">hello@sconesourcery.com</a>
+      <a href="tel:+13217882555">(321) 788-2555</a>
+      <a href="https://sitesourcery.com/">Site by Site Sourcery</a>
+    </div>
+  </div>
+  <div class="wrap"><div class="foot-legal"><span>© 2026 Scone Sourcery</span><span>Engravings &amp; tune made in-house for Scone Sourcery · one guy</span></div></div>
+</footer>
+
+</body>
+</html>
