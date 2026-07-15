@@ -41,6 +41,14 @@ a{color:inherit;text-underline-offset:.24em;text-decoration-thickness:1px}
 strong{font-weight:650}
 ::selection{background:var(--gold);color:#160e09}
 :focus-visible{outline:2px solid var(--gold-hi);outline-offset:4px}
+
+/* A 32px bakehouse cursor for precise desktop pointers; the 3 2 hotspot is the scone tip. */
+@media (hover:hover) and (pointer:fine){
+  html,body{cursor:url("assets/cursor-scone.svg") 3 2,auto}
+  body :is(a,button,select,summary,[role="button"],label[for],input[type="button"],input[type="submit"],input[type="reset"],input[type="checkbox"],input[type="radio"],input[type="range"]){cursor:url("assets/cursor-scone-hover.svg") 3 2,pointer}
+  body :is(input:not([type]),input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="url"],input[type="number"],textarea){cursor:text}
+  body :is(button,input,select)[disabled],body [aria-disabled="true"]{cursor:not-allowed}
+}
 .wrap{width:min(calc(100% - 2.5rem),var(--wrap));margin-inline:auto}
 .section{padding-block:clamp(5rem,9vw,8.5rem);position:relative}
 .soft{color:var(--muted)}
@@ -280,4 +288,10 @@ strong{font-weight:650}
 @keyframes wave{from{height:.2rem}to{height:1rem}}
 @keyframes map-pulse{50%{transform:scale(1.16);opacity:.35}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.ember{display:none}.hero-artwork,.service-card,.btn{transition:none}.service-card:hover,.btn:hover{transform:none}}
-@media (forced-colors:active){.btn,.spellbook,.spell-tab,.service-card,.reserve-panel,.input{border:1px solid CanvasText}.hero-shade{background:rgba(0,0,0,.65)}.flavor-sigil,.service-icon,.rush-mark{forced-color-adjust:none}}
+@media (forced-colors:active){
+  html,body{cursor:auto}
+  body :is(a,button,select,summary,[role="button"],label[for],input[type="button"],input[type="submit"],input[type="reset"],input[type="checkbox"],input[type="radio"],input[type="range"]){cursor:pointer}
+  body :is(input:not([type]),input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="url"],input[type="number"],textarea){cursor:text}
+  body :is(button,input,select)[disabled],body [aria-disabled="true"]{cursor:not-allowed}
+  .btn,.spellbook,.spell-tab,.service-card,.reserve-panel,.input{border:1px solid CanvasText}.hero-shade{background:rgba(0,0,0,.65)}.flavor-sigil,.service-icon,.rush-mark{forced-color-adjust:none}
+}
